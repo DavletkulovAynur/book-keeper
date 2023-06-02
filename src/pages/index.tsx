@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import Test from "./test";
+import Main from "./main";
 
 export const Routing = () => {
   return (
     <Routes>
-      <Route path="/" element={<Test />}></Route>
+      <Route path="/" element={<Main />}></Route>
     </Routes>
   );
 };
