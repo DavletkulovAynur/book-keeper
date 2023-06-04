@@ -5,7 +5,7 @@ import type { TabsProps } from 'antd';
 const Test = () => {
   return (
     <div>
-      <h1>HELLO</h1>
+      <h1>HELLO TEST</h1>
     </div>
   )
 }
