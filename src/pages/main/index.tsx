@@ -8,18 +8,15 @@ import {
 } from "@ant-design/icons";
 import { Layout, Menu, Button, theme } from "antd";
 import { useSelector, useDispatch } from "react-redux";
-import { RootState } from "store";
 
 const { Header, Sider, Content } = Layout;
 
 const Main: React.FC = () => {
-  const count = useSelector((state: RootState) => state.counter.value);
   const [collapsed, setCollapsed] = useState(false);
   const {
     token: { colorBgContainer },
   } = theme.useToken();
 
-  console.log("count", count);
   return (
     <Layout>
       <Sider trigger={null} collapsible collapsed={collapsed}>
