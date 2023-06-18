@@ -21,7 +21,7 @@ const Sidebar: FC = memo(() => {
           {
             key: '1',
             icon: <UserOutlined />,
-            label: 'nav 1',
+            label: 'Бухгалтерия',
           },
           {
             key: '2',
