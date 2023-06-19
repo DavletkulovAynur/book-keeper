@@ -21,17 +21,12 @@ const Sidebar: FC = memo(() => {
           {
             key: '1',
             icon: <UserOutlined />,
-            label: 'nav 1',
+            label: 'Расходы и доходы',
           },
           {
             key: '2',
             icon: <VideoCameraOutlined />,
-            label: 'nav 2',
-          },
-          {
-            key: '3',
-            icon: <UploadOutlined />,
-            label: 'nav 3',
+            label: 'Накопления и долги',
           },
         ]}
       />
