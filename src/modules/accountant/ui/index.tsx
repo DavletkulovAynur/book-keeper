@@ -3,6 +3,7 @@ import React, { memo } from 'react'
 import { Layout, theme } from 'antd'
 import { Col, Row } from 'antd'
 import { Sidebar } from './components/sidebar'
+import { Main } from './components/main'
 
 const { Content } = Layout
 
@@ -22,8 +23,10 @@ const Accountant: React.FC = memo(() => {
       }}
     >
       <Row>
-        <Col span={18}>col-12</Col>
-        <Sidebar />
+        <Col span={24}>
+          <Main />
+        </Col>
+        {/* <Sidebar /> */}
       </Row>
     </Content>
   )
