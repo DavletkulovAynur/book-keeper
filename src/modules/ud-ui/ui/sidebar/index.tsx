@@ -28,6 +28,11 @@ const Sidebar: FC = memo(() => {
             icon: <VideoCameraOutlined />,
             label: 'Накопления и долги',
           },
+          {
+            key: '3',
+            icon: <VideoCameraOutlined />,
+            label: 'Документы',
+          },
         ]}
       />
     </Sider>
