@@ -1,18 +1,34 @@
 import React, { memo } from 'react'
 
 import { Layout, theme } from 'antd'
-import { Col, Row } from 'antd'
-import { Sidebar } from './components/sidebar'
-import { Main } from './components/main'
+import { Tabs } from 'antd'
+import type { TabsProps } from 'antd'
+import { Income } from './components/income'
 
 const { Content } = Layout
+
+const items: TabsProps['items'] = [
+  {
+    key: '1',
+    label: `Расходы`,
+    children: 'costs',
+  },
+  {
+    key: '2',
+    label: `Доходы`,
+    children: <Income />,
+  },
+]
 
 const Accountant: React.FC = memo(() => {
   const {
     token: { colorBgContainer },
   } = theme.useToken()
 
-  //FIXME: что я хочу сделать какую задачу придумать
+  const onChange = (key: string) => {
+    console.log(key)
+  }
+
   return (
     <Content
       style={{
@@ -22,12 +38,9 @@ const Accountant: React.FC = memo(() => {
         background: colorBgContainer,
       }}
     >
-      <Row>
-        <Col span={24}>
-          <Main />
-        </Col>
-        {/* <Sidebar /> */}
-      </Row>
+      <>
+        <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
+      </>
     </Content>
   )
 })
