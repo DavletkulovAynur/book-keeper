@@ -1,8 +1,8 @@
 export interface Item {
   key: string
-  name: string
-  age: number
-  address: string
+  category: string
+  amount: number
+  deskription: string
 }
 
 export interface EditableCellProps extends React.HTMLAttributes<HTMLElement> {
@@ -14,3 +14,13 @@ export interface EditableCellProps extends React.HTMLAttributes<HTMLElement> {
   index: number
   children: React.ReactNode
 }
+
+export const testData = [
+  {
+    key: '1',
+    category: 'Работа',
+    amount: 120000,
+    deskription: 'London Park no',
+    date: '12.01.2022'
+  },
+]
