@@ -28,3 +28,4 @@ export const authSlice = createSlice({
 export const { increment, decrement, incrementByAmount } = authSlice.actions;
 
 export default authSlice.reducer;
+
